@@ -8,8 +8,7 @@ const app = fastify({
 });
 const index = await readFile('./index.html', 'utf-8');
 
-const secret = 99999; // 1 in a 100k??
-// const secret = randomInt(0, 10 ** 5); // 1 in a 100k??
+const secret = randomInt(0, 10 ** 5); // 1 in a 100k??
 
 let requests = 10;
 
